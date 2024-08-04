@@ -46,8 +46,9 @@ console.log(library.join(" , "));
 
 // Create a New Library Section
 
-let newArrivals = library.slice(0,16);
+let newArrivals = library.slice(-2);
 console.log(newArrivals);
+console.log(library);
 
 // Expected Output
 
