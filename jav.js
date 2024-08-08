@@ -1,28 +1,25 @@
 const library = [];
-console.log(library);
+let book1 = { Title: "The Great Gatsby", Author: "F. Scott Fitzgerald", Yearofpublish: 1925, Available: true };
+let book2 = { Title: "To Kill a Mockingbird", Author: "Harper Lee", Yearofpublish: 1960, Available: true };
+let book3 = { Title: "1984", Author: "George Orwell", Yearofpublish: 1949, Available: false };
+let book4 = { Title: "Pride and Prejudice", Author: "Jane Austen", Yearofpublish: 1813, Available: true };
 
 // adding books to the library
 
-library.push("The Great Gatsby","F. Scott Fitzgerald", 1925, true);
-//console.log(library);
 
-library.push("To Kill a Mockingbird", "Harper Lee", 1960, true);
-//console.log(library);
-
-library.push(1984,"George Orwell", 1949, false);
-console.log(library);
-
-library.push("Pride and Prejudice","Jane Austen", 1813, true);
+library.push(book1, book2, book3, book4);
 console.log(library);
 
 // Update the Availability of a Book
 
-library.splice(11, 1 , true);
- console.log(library);
+book3.Available = true;
 
- // remove pride and prejudice
+console.log(library);
+ 
 
-library.splice(12,1);
+// remove pride and prejudice
+
+library.splice(3, 1);
 console.log(library);
 
 // check if The Great Gatsby is in the list
@@ -38,11 +35,11 @@ console.log(library.includes("The Great Gatsby"));
 
 // Add a New Book to the Start of the Library
 
-library.unshift("The Catcher in the Rye","J.D. Salinger", 1951, true);
+library.unshift("The Catcher in the Rye", "J.D. Salinger", 1951, true);
 console.log(library);
 
 // Get a List of All Book Titles
-console.log(library.join(" , "));
+console.log(library.join(" "));
 
 // Create a New Library Section
 
